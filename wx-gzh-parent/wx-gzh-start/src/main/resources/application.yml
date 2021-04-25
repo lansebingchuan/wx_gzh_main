@@ -1,0 +1,18 @@
+server:
+  port: 8080 #启动端口 命令行注入
+
+spring:
+  application:
+    name: wx-gzh-start
+  main:
+    allow-bean-definition-overriding: true # Spring Boot 2.1 需要设定
+
+logging:
+  config: classpath:log4j2.xml
+  level:
+    root: info
+    org.mybatis: debug
+    java.sql: debug
+    org.springframework.web: trace
+
+
